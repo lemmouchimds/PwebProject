@@ -1,0 +1,67 @@
+body{
+    /* background-image: url("..\\Pics\\SignIn-Pic.jpg");
+    background-size: cover;
+    background-repeat: ; */
+    background-color: #111;
+    align-items: center;
+}
+/* label,
+input,
+select{
+    /* background-color: #111; 
+    margin-left: 20%;
+} */
+
+fieldset,
+button{
+    margin: auto 25%;
+    border-color: aqua;
+    /* padding-left: ; */
+}
+h1{
+    width: 200px;
+    margin-left: calc(50% - 100px);
+}
+
+h1,
+label, 
+legend{
+    color: white;
+}
+
+label{
+    display: block;
+    margin: 5px 0; 
+} 
+
+input{
+    /* margin: 0 25%; */
+    padding: 4px 5px;
+    border-radius: 3px;
+    border-top: none;
+    border-bottom: 2px solid aqua;
+    background-color: midnightblue;
+    display: block;
+    /* width: 70%; */
+    /* border-bottom: 2px solid white; */
+    
+    /*margin-right: 1px ;
+    padding: 8px 10px; */
+    /* background-color: aqua; */
+    /* display: in; */
+}
+
+input:focus{
+    border: 2px midnightblue solid;
+
+}
+
+input:hover{
+    border-bottom: 2px solid purple;
+    /* background-color: red; */
+}
+
+button:hover{
+    background-color: midnightblue;
+    color: white;
+}
