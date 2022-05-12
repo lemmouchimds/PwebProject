@@ -28,7 +28,6 @@ h1{
 }
 .container{
     box-shadow: 10px 10px 10px #000000;
-    border-width: 200px;
     border-style:solid rgb(116, 107, 129);
     border-radius: 2em;
     margin:20px 80px;
