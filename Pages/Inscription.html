@@ -16,54 +16,47 @@
 
     <main>
         <form action="">
-            
-                <fieldset id="first-fieldset">
-                    <legend id="unique-info">
-                        Inforamtion Unique
-                    </legend>
-                    <label for="matricule">Matricule</label>
-                    <input autofocus type="text" id="matricule" placeholder="Matricule">
-                    <br>
-                    <label for="nom">Nom</label>
-                    <input name="nom" type="text" id="nom" placeholder="Nom">
-                    <br>
-                    <label for="prenom">Prénom</label>
-                    <input name="prenom" type="text" id="prenom" placeholder="Prénom">
-                    <br>
-                    <label for="email">Email</label>
-                    <input name="email" type="email" id="email" required placeholder="Email">
-                    <br>
-                    <label for="telephone">Telephone</label>
-                    <input name="telephone" type="tel" id="telephone" required placeholder="Telephone">
-                    <!-- class="dkh-form-field__input"  -->
-                </fieldset>
-                <fieldset id="second-fieldset">
-                    <legend id="stydies">
-                        Etudes
-                    </legend>
-    
-                    <label for="annee">Année universitaire</label>
-                    <select name="annee" id="annee" required>
-                        <optgroup label="Licence"></optgroup>
-                        <option value="L1">L1</option>
-                        <option value="L2">L2</option>
-                        <option value="L3">L3</option>
-                        <optgroup label="Master"></optgroup>
-                        <option value="M1">M1</option>
-                        <option value="M2">M2</option>
-                    </select>
-                    <br>
-                    <label for="specialite">Specialité</label>
-                    <input type="text" name="specialite" id="specialite" required placeholder="Specialité">
-                    <br>
-                    <label for="faculte">Faculté</label>
-                    <input type="text" name="faculte" id="faculte" required placeholder="Faculté">
-                    <br>
-                    <label for="motif">Votre motif</label>
-                    <input type="text" name="motif" id="motif" required placeholder="Motif">
-                </fieldset>
+            <div class="unique-info">
+                <h2>Inforamtion Unique</h2>
+                <label for="matricule">Matricule</label>
+                <input autofocus type="text" id="matricule" placeholder="Matricule">
                 <br>
-                <button type="submit">Sign Up</button>
+                <label for="nom">Nom</label>
+                <input name="nom" type="text" id="nom" placeholder="Nom">
+                <br>
+                <label for="prenom">Prénom</label>
+                <input name="prenom" type="text" id="prenom" placeholder="Prénom">
+                <br>
+                <label for="email">Email</label>
+                <input name="email" type="email" id="email" required placeholder="Email">
+                <br>
+                <label for="telephone">Telephone</label>
+                <input name="telephone" type="tel" id="telephone" required placeholder="Telephone">
+            </div>
+            <div class="stydies">
+                <h2>Etudes</h2>
+                <label for="annee">Année universitaire</label>
+                <select name="annee" id="annee" required>
+                    <optgroup label="Licence"></optgroup>
+                    <option value="L1">L1</option>
+                    <option value="L2">L2</option>
+                    <option value="L3">L3</option>
+                    <optgroup label="Master"></optgroup>
+                    <option value="M1">M1</option>
+                    <option value="M2">M2</option>
+                </select>
+                <br>
+                <label for="specialite">Specialité</label>
+                <input type="text" name="specialite" id="specialite" required placeholder="Specialité">
+                <br>
+                <label for="faculte">Faculté</label>
+                <input type="text" name="faculte" id="faculte" required placeholder="Faculté">
+                <br>
+                <label for="motif">Votre motif</label>
+                <input type="text" name="motif" id="motif" required placeholder="Motif">
+            </div>
+                
+            <button type="submit">Sign Up</button>
         </form>
     </main>
     <div class="spc"> </div>

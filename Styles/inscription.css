@@ -5,52 +5,45 @@ body{
     background-color: #111;
     align-items: center;
 }
-*{
-    font-size: 15px;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 .container2{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     margin: 0px 22% ;
-    
 }
 
-fieldset{
-    border-radius: 20px;
-    padding: 10px 30px 20px;
-    text-align-last: center;
+* :not(select,
+optgroup,
+option){
+    color: white;
 }
-legend{
-    margin-left: 40%;
-    margin-left: 20px;
-    font-size: 18px;
-    /* width: 170px; */
-}
-
-#unique-info{
-    width: 170px;
-}
-#stydies{
-    width: 70px;
-}
-
-#first-fieldset{
-    margin-bottom: 20px;
-}
-button{
-    width: 50%;
-    margin-left: 25%;
-}
-fieldset,
-button{
-    border-color: aqua;
+*{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 h1{
     font-size: 50px;
-    width: 280px;
-    margin-left: calc(50% - 140px);
+}
+
+h2{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.unique-info,
+.stydies{
+    border: 2px aqua solid;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+button{
+    border-color: aqua;
+    color: black;
 }
 .container{
     box-shadow: 10px 10px 10px #000000;
@@ -63,29 +56,9 @@ h1{
     background-image:url(../Pics/c02ab2499d54be35a58d765a239a169f.jpg);
 }
 
-
-
 label{
-    /* text-size-adjust: 20px; */
     display: block;
-    margin: 5px 33%;
-    width: 200px;
 } 
-
-/* input{
-    width:350px;
-    /* margin: 0 25%; 
-    padding: 4px 5px;
-    border-radius: 3px;
-    border-top: none;
-    border-bottom: 2px solid aqua;
-    background-color: midnightblue;
-    display: block;
-    width: 70%;
-    margin-left: 15%;
-    color:white;
-    /* padding: 8px 10px;  
-} */
 
 input{
     margin-bottom: 20px;
@@ -100,20 +73,18 @@ input{
 }
 select{
     width: 25%;
-    margin-left: calc(50% / 2);
+    color: black;
 }
 
 input:focus{
-    border: 2px midnightblue solid;
-
+    border-bottom: 2px aqua solid;   
 }
 .spc{
     height: 2em;
 }
 
 input:hover{
-    border-bottom: 2px solid purple;
-    /* background-color: red; */
+    border-bottom: 2px solid aqua;
 }
 
 button:hover{
