@@ -4,6 +4,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-size: cover;
     background-image: url(../Pics/b2fe91505525ba942ae7d85a2cd7a6d4.gif);
 }
 
