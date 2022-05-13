@@ -14,61 +14,62 @@
 <div class="container">
     <div class="container2">
 
+    <main>
+        <form action="">
+            <div>
+                <fieldset>
+                    <legend>
+                        inforamtion unique
+                    </legend>
+                    <label for="matricule">Matricule</label>
+                    <input autofocus type="text" id="matricule" placeholder="Matricule">
+                    <br>
+                    <label for="nom">Nom</label>
+                    <input name="nom" type="text" id="nom" placeholder="Nom">
+                    <br>
+                    <label for="prenom">Prénom</label>
+                    <input name="prenom" type="text" id="prenom" placeholder="Prénom">
+                    <br>
+                    <label for="email">Email</label>
+                    <input name="email" type="email" id="email" required placeholder="Email">
+                    <br>
+                    <label for="telephone">Telephone</label>
+                    <input name="telephone" type="tel" id="telephone" required placeholder="Telephone">
+                    <!-- class="dkh-form-field__input"  -->
+                </fieldset>
+                    <div class="form-field__messages"></div>
+            </div>
+                <fieldset>
+                    <legend>
+                        Etudes
+                    </legend>
     
-    <form action="">
-        <div>
-            <fieldset>
-                <legend>
-                    inforamtion unique
-                </legend>
-                <label for="matricule">Matricule</label>
-                <input autofocus type="text" id="matricule" placeholder="Matricule">
-                <br>
-                <label for="nom">Nom</label>
-                <input name="nom" type="text" id="nom" placeholder="Nom">
-                <br>
-                <label for="prenom">Prénom</label>
-                <input name="prenom" type="text" id="prenom" placeholder="Prénom">
-                <br>
-                <label for="email">Email</label>
-                <input name="email" type="email" id="email" required placeholder="Email">
-                <br>
-                <label for="telephone">Telephone</label>
-                <input name="telephone" type="tel" id="telephone" required placeholder="Telephone">
-                <!-- class="dkh-form-field__input"  -->
-            </fieldset>
+                    <label for="annee">Année universitaire</label>
+                    <select name="annee" id="annee" required>
+                        <optgroup label="Licence"></optgroup>
+                        <option value="L1">L1</option>
+                        <option value="L2">L2</option>
+                        <option value="L3">L3</option>
+                        <optgroup label="Master"></optgroup>
+                        <option value="M1">M1</option>
+                        <option value="M2">M2</option>
+                    </select>
+                    <br>
+                    <label for="specialite">Specialité</label>
+                    <input type="text" name="specialite" id="specialite" required placeholder="Specialité">
+                    <br>
+                    <label for="faculte">Faculté</label>
+                    <input type="text" name="faculte" id="faculte" required placeholder="Faculté">
+                    <br>
+                    <label for="motif">Votre motif</label>
+                    <input type="text" name="motif" id="motif" required placeholder="Motif">
+                </fieldset>
                 <div class="form-field__messages"></div>
-        </div>
-            <fieldset>
-                <legend>
-                    Etudes
-                </legend>
-
-                <label for="annee">Année universitaire</label>
-                <select name="annee" id="annee" required>
-                    <optgroup label="Licence"></optgroup>
-                    <option value="L1">L1</option>
-                    <option value="L2">L2</option>
-                    <option value="L3">L3</option>
-                    <optgroup label="Master"></optgroup>
-                    <option value="M1">M1</option>
-                    <option value="M2">M2</option>
-                </select>
                 <br>
-                <label for="specialite">Specialité</label>
-                <input type="text" name="specialite" id="specialite" required placeholder="Specialité">
-                <br>
-                <label for="faculte">Faculté</label>
-                <input type="text" name="faculte" id="faculte" required placeholder="Faculté">
-                <br>
-                <label for="motif">Votre motif</label>
-                <input type="text" name="motif" id="motif" required placeholder="Motif">
-            </fieldset>
-            <div class="form-field__messages"></div>
-            <br>
-            <div class="dkh-form-footer">
-            <button class="dkh-btn dkh-btn-primary" type="submit">Sign Up</button>
-    </form>
+                <div class="dkh-form-footer">
+                <button class="dkh-btn dkh-btn-primary" type="submit">Sign Up</button>
+        </form>
+    </main>
     <div class="spc"> </div>
     </div>
 </div> 
