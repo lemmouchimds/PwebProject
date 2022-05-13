@@ -1,11 +1,35 @@
+body{
+  
+  background-size: contain;
+  
+  background-image: url(https://i.pinimg.com/564x/62/45/5d/62455db674c507fce65b2a67f78e5d5b.jpg);
+}
+
+img{
+  display:block;
+  margin: 0px auto;
+  
+}
 .column {
-    float: left;
-    width: 33.3%;
-    margin-bottom: 16px;
-    padding: 0 8px;
+  border-radius: 20px;;
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+
   }
   
-  /* Display the columns below each other instead of side by side on small screens */
+.container1{
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.2);
+  background-image:url();
+  background-size: contain;
+  margin:4em;
+  padding: 3em;
+  grid-gap:4em;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
   @media screen and (max-width: 650px) {
     .column {
       width: 100%;
@@ -13,17 +37,19 @@
     }
   }
   
-  /* Add some shadows to create a card effect */
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgb(167, 181, 194);
+    box-shadow: 10px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 8px;
+    border-radius: 2em;
+    /* vertical-align: middle; */
   }
   
-  /* Some left and right padding inside the container */
+
   .container {
     padding: 0 16px;
   }
   
-  /* Clear floats */
   .container::after, .row::after {
     content: "";
     clear: both;
