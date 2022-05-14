@@ -131,8 +131,8 @@ body, html {
   text-shadow: 3px 3px 4px #000000;
 }
 
-<<<<<<< HEAD
-.presentation{
+/* <<<<<<< HEAD */
+/* .presentation{
   height: 50%;
   background-color: white;
   padding: 30px;
@@ -158,11 +158,11 @@ body, html {
 }
 .button:hover{
     color:aqua
-}
+} */
 
 
-=======
->>>>>>> 83f1293943ed02291be4d7846c69ffe8abf6d073
+/* ======= */
+/* >>>>>>> 83f1293943ed02291be4d7846c69ffe8abf6d073 */
 body{
   height: 100%;
   background-image: url("../Pics/Main-background.jpg") ;
@@ -181,8 +181,8 @@ body{
 
 
 footer{
-<<<<<<< HEAD
-  position: relative;
+/* <<<<<<< HEAD */
+  /* position: relative;
   bottom: 0;
   left: 0;
   right: 0;
@@ -191,8 +191,8 @@ footer{
   height: auto;
   font-family: "Open Sans";
   padding-top: 40px;
-  color: #fff;
-=======
+  color: #fff; */
+/* ======= */
     position: relative;
     bottom: 0;
     left: 0;
@@ -203,7 +203,7 @@ footer{
     font-family: "Open Sans";
     padding-top: 10px;
     color: #fff;
->>>>>>> 83f1293943ed02291be4d7846c69ffe8abf6d073
+/* >>>>>>> 83f1293943ed02291be4d7846c69ffe8abf6d073 */
 }
 .box{
   margin:10px;
