@@ -251,6 +251,7 @@ footer{
 input,
 textarea{
   width: 100%;
+  outline: none;
   color: white;
   background-color: #111;
   border: 2px solid aqua;
@@ -269,7 +270,6 @@ textarea{
   /* text-align: start; */
 }
 
-
 .btn{
   transition: background-color .4s ease;
   color:white;
@@ -277,10 +277,12 @@ textarea{
   height: 40px;
   background-color: #111;
   border-radius: 15px;
+  border-color: aqua;
 }
 .btn:hover{
   background-color: aqua;
   color:#000;
+  cursor: pointer;
 }
 
 /* #endregion */
