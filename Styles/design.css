@@ -361,6 +361,9 @@ textarea{
   left:0;
   animation: 30s slider infinite;
 }
+.topic{
+  margin:5px 10%
+}
 @keyframes slider{
   /* 0% {
     left:0%;
@@ -398,15 +401,28 @@ textarea{
     color:white;
     font-size: 1.75rem;
     /* font-weight: 400; */
+    text-transform: capitalize;
+    line-height: 3rem;
+    text-align:center;
+    justify-content: center;
+  }
+
+.left-slider{
+  width:36%;
+
+}
+.left-slider2{
+  margin:5% 5%;
+  color:white;
+  font-size: 1.75rem;
   text-transform: capitalize;
   line-height: 3rem;
   text-align:center;
   justify-content: center;
+}
+.left-sliderK{
+  display:inline;
 
-  }
-
-
-
-
+}
 
   /* #endregion */
