@@ -331,7 +331,7 @@ textarea{
 
 .container-slider{
   border-radius: 1em;
-  /* border:solid aqua; */
+  border:solid aqua;
   margin :30px;
   padding:36px;
   margin:40px;
@@ -350,7 +350,6 @@ textarea{
 .slidershow ,.slidershowK{
   width:64%;
   border-radius: 2em;
-  border:solid aqua;
   overflow:hidden;
 }
 .desca{
