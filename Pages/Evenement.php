@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+session_start();
+$host="localhost";
+$username="root";
+$password="";
+$database="eventpage";
+
+$connect = new PDO("mysql: host=$host; dbname=$database", $username, $password);
+$connect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$query = "SELECT * FROM events";
+            $statement = $connect->prepare($query);
+            $statement->execute();
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles/evenment.css">
     <title>Events</title>
-    <script>
-      function myFunction1() {
-        var popup1 = document.getElementById("myPopup1");
+     <script>
+      function myFunction() {
+        var popup1 = document.getElementByClassName("popuptext");
         popup1.classList.toggle("show");
       }
       </script>
-    <script>
+    <!-- <script>
       function myFunction2() {
         var popup2 = document.getElementById("myPopup2");
         popup2.classList.toggle("show");
@@ -47,17 +61,45 @@
         var popup7 = document.getElementById("myPopup7");
         popup7.classList.toggle("show");
       }
-      </script>
+      </script>  -->
 </head>
 <body>   
+  
+  <div class="container1" >
+    <?php
+      $i = 1;
+      while($event = $statement->fetch()){
+        
+        echo("
+        <div class='column'>
+        <div class='card'>
+         <img src= ".$event["img"]." width='100%'>
+        <div class='container'>
+        <h2>
+                ".$event["name"]."
+              </h2>
+              <p>".$event["description"]."</p>
+              <div class='popup' onclick='myFunction()'>See Details
+                <span class='popuptext' >Date:".$event["date"]."</br>Type:".$event["type"]."</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    ");
+   
+    }
+    ?>
+</div>
 
-
+<!-- 
  <div class="container1" >
        <div class="column">
           <div class="card">
             <img src="../Pics/AGCX.57ffb36d.svg" width="100%">
             <div class="container">
-              <h2>Algerian Game Challenge</h2>
+              <h2>
+                
+              </h2>
               <p>A nation-wide game development contest held annually.</p>
               <div class="popup" onclick="myFunction1()">See Details
                 <span class="popuptext" id="myPopup1">Date:</br>Type:</span>
@@ -147,6 +189,6 @@
         </div>
       
 
-  </div>  
+  </div>   -->
 </body>
 </html>

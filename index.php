@@ -1,5 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
+    <?php 
+
+    $servername = "localhost";
+    $database = "eventpage";
+    $username = "root";
+    $password = "";
+    
+    // Create connection
+    
+    $conn = mysqli_connect($servername, $username, $password, $database);
+    
+    // Check connection
+    
+    if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+    }
+    
+    $query1=mysqli_query($conn,"select * from events");
+    while($row=mysqli_fetch_array($query1))
+    
+    echo $row['name'];
+    mysqli_close($conn);
+    
+    ?>
+    
+
+
 <head>
     <title>Micro Club</title>
     <link rel="stylesheet" href="Styles/design.css">
