@@ -1,5 +1,6 @@
 
 <!DOCTYPE html>
+<?php session_start(); echo("<p style='color: red'>".$_SESSION["username"]."</p>"); ?>
 <html lang="en">
 <head>
     <title>Micro Club</title>
@@ -20,7 +21,7 @@
         <img src="Pics/263414991_1513069752401389_4681943082764289098_n.png" alt="Micro Club logo">
         <div class="header-right">
             <a href="Pages/Evenement.html">Events</a>
-            <a href="Pages/Log-in.html">Sign in</a>
+            <a href="Pages/Log-in.html"><?php if(isset($_SESSION["username"])) echo($_SESSION["username"]); else echo("<h1>Sign in</h1>");?></a>
         </div>
     </header> 
     
