@@ -1,5 +1,5 @@
 body{
-  
+  font-family:Arial, Helvetica, sans-serif;
   background-size: contain;
   background-image: url(https://i.pinimg.com/564x/62/45/5d/62455db674c507fce65b2a67f78e5d5b.jpg);
 }
@@ -86,9 +86,9 @@ img{
 
 /* The actual popup (appears on top) */
 .popup .popuptext {
-  font-size: 10px;
+  font-size: 20px;
   visibility: hidden;
-  /* width: 160px; */
+  width: 160px;
   background-color: #555;
   color: #fff;
   /* text-align: center; */
@@ -131,3 +131,4 @@ img{
   from {opacity: 0;}
   to {opacity:1 ;}
 }
+
